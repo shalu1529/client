@@ -10,7 +10,7 @@ export default function ProtectedRoute({ children }) {
     const token = localStorage.getItem("token");
 
     if (!user || !token) {
-      router.push("/login"); // or your login route
+      router.push("/login"); 
     }
   }, []);
 
